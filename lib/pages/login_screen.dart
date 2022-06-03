@@ -180,37 +180,43 @@ class LoginScreen extends StatelessWidget {
                         const Gap(24),
                         Row(
                           children: [
-                            Container(
-                              padding: const EdgeInsets.symmetric(
-                                horizontal: 15,
-                                vertical: 8,
-                              ),
-                              decoration: BoxDecoration(
-                                borderRadius: BorderRadius.circular(10),
-                                color: const Color(0xFFEEEEEE),
-                              ),
-                              child: const Image(
-                                image: AssetImage(
-                                  'assets/icons/google-icon.png',
+                            InkWell(
+                              onTap: () {},
+                              child: Container(
+                                padding: const EdgeInsets.symmetric(
+                                  horizontal: 15,
+                                  vertical: 8,
                                 ),
-                                width: 24,
+                                decoration: BoxDecoration(
+                                  borderRadius: BorderRadius.circular(10),
+                                  color: const Color(0xFFEEEEEE),
+                                ),
+                                child: const Image(
+                                  image: AssetImage(
+                                    'assets/icons/google-icon.png',
+                                  ),
+                                  width: 24,
+                                ),
                               ),
                             ),
                             const Gap(16),
-                            Container(
-                              padding: const EdgeInsets.symmetric(
-                                horizontal: 15,
-                                vertical: 8,
-                              ),
-                              decoration: BoxDecoration(
-                                borderRadius: BorderRadius.circular(10),
-                                color: const Color(0xFFEEEEEE),
-                              ),
-                              child: const Image(
-                                image: AssetImage(
-                                  'assets/icons/apple-icon.png',
+                            InkWell(
+                              onTap: () {},
+                              child: Container(
+                                padding: const EdgeInsets.symmetric(
+                                  horizontal: 15,
+                                  vertical: 8,
                                 ),
-                                width: 24,
+                                decoration: BoxDecoration(
+                                  borderRadius: BorderRadius.circular(10),
+                                  color: const Color(0xFFEEEEEE),
+                                ),
+                                child: const Image(
+                                  image: AssetImage(
+                                    'assets/icons/apple-icon.png',
+                                  ),
+                                  width: 24,
+                                ),
                               ),
                             ),
                             const Spacer(),

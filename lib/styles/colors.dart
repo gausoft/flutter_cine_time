@@ -19,8 +19,8 @@ class AppColors {
   static const Color secondaryColor = Colors.white;
   static const Color backgroundColor = Color(0xFFFAFAFA);
   static const Color successColor = Color(green);
-  static const Color errorColor = Color(danger);
-  static const Color disabledColor = Color(0xFF828282);
+  static const Color dangerColor = Color(danger);
+  static const Color appGrey = Color(0xFF828282);
 
   static const MaterialColor primarySwatch = MaterialColor(
     black,

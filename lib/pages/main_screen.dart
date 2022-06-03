@@ -4,6 +4,7 @@ import 'package:unicons/unicons.dart';
 import '../styles/colors.dart';
 import '../widgets/titled_navigation_bar/titled_navigation_bar.dart';
 import 'home_screen.dart';
+import 'ticket_screen.dart';
 
 class MainScreen extends StatefulWidget {
   const MainScreen({Key? key}) : super(key: key);
@@ -20,7 +21,7 @@ class _MainScreenState extends State<MainScreen> {
     const HomeScreen(),
     const Scaffold(body: Center(child: Text('Page 2'))),
     const Scaffold(body: Center(child: Text('Page 3'))),
-    const Scaffold(body: Center(child: Text('Page 4'))),
+    const TicketScreen(),
   ];
 
   final List<TitledNavigationBarItem> items = [
@@ -60,7 +61,7 @@ class _MainScreenState extends State<MainScreen> {
           onTap: onPageChanged,
           items: items,
           activeColor: AppColors.primaryColor,
-          inactiveColor: AppColors.disabledColor,
+          inactiveColor: AppColors.appGrey,
         ),
       ),
     );

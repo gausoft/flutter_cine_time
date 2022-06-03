@@ -5,7 +5,7 @@ import 'locator.dart';
 import 'routes.dart' as routes;
 import 'pages/splash_screen.dart';
 import 'services/navigation_service.dart';
-import 'styles/colors.dart';
+// import 'styles/colors.dart';
 import 'styles/themes.dart';
 
 void main() {

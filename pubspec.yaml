@@ -12,7 +12,6 @@ dependencies:
   flutter:
     sdk: flutter
 
-
   cupertino_icons: ^1.0.2
   gap: ^2.0.0
   google_fonts: ^3.0.1
@@ -20,6 +19,7 @@ dependencies:
   go_router: ^3.1.1
   provider: ^6.0.3
   unicons: ^2.1.0
+  flutter_rating_bar: ^4.0.1
 
 dev_dependencies:
   flutter_test:
@@ -34,8 +34,20 @@ flutter:
 
   assets:
     - assets/images/    
+    - assets/images/movies/
+    - assets/images/actors/
     - assets/icons/
     - assets/fonts/
+
+  fonts:
+    - family: Product Sans
+      fonts:
+        - asset: assets/fonts/Product-Sans/Product-Sans-Regular.ttf
+        - asset: assets/fonts/Product-Sans/Product-Sans-Bold.ttf
+        - asset: assets/fonts/Product-Sans/Product-Sans-Italic.ttf
+        - asset: assets/fonts/Product-Sans/Product-Sans-Bold-Italic.ttf
+          style: normal
+          weight: 400
 
 flutter_icons:
   android: "launcher_icon"

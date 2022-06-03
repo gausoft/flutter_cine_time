@@ -2,10 +2,15 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
+import 'pages/booking_screen.dart';
+import 'pages/choose_payment_screen.dart';
 import 'pages/main_screen.dart';
+import 'pages/movie_details_screen.dart';
+import 'pages/payment_screen.dart';
 import 'pages/register_screen.dart';
 import 'pages/splash_screen.dart';
 import 'pages/login_screen.dart';
+import 'pages/ticket_screen.dart';
 
 final GoRouter router = GoRouter(
   initialLocation: '/',
@@ -64,7 +69,32 @@ Route<dynamic> onGenerate(RouteSettings settings) {
     case '/main':
       return CupertinoPageRoute<void>(
         settings: settings,
-        builder: (context) => MainScreen(),
+        builder: (context) => const MainScreen(),
+      );
+    case '/movie-details':
+      return CupertinoPageRoute<void>(
+        settings: settings,
+        builder: (context) => const MovieDetailsScreen(),
+      );
+    case '/booking':
+      return CupertinoPageRoute<void>(
+        settings: settings,
+        builder: (context) => const BookingScreen(),
+      );
+    case '/choose-payment':
+      return CupertinoPageRoute<void>(
+        settings: settings,
+        builder: (context) => const ChoosePaymentScreen(),
+      );
+    case '/payment':
+      return CupertinoPageRoute<void>(
+        settings: settings,
+        builder: (context) => const PaymentScreen(),
+      );
+    case '/ticket':
+      return CupertinoPageRoute<void>(
+        settings: settings,
+        builder: (context) => const TicketScreen(),
       );
     default:
       return CupertinoPageRoute(

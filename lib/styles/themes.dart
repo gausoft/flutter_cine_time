@@ -43,7 +43,8 @@ class AppTheme {
   static String appName = "CineTime";
 
   static ThemeData lightTheme = ThemeData(
-    textTheme: GoogleFonts.soraTextTheme(),
+    fontFamily: 'Product Sans',
+    // textTheme: GoogleFonts.soraTextTheme(),
     primarySwatch: AppColors.primarySwatch,
     brightness: Brightness.light,
     visualDensity: VisualDensity.adaptivePlatformDensity,
